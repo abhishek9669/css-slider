@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css slider</title>
+        <style>
+            body{
+                margin: 100px 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            a{
+                
+                text-decoration: none;
+                display: block;
+                background: hotpink;
+                text-align: center;
+                line-height: 200px;
+                font-size: 4em;
+                
+                height: 100%;
+                border: 1px dashed blue;
+                height: 100%;
+                text-align: center;
+                color: white;
+            }
+
+            .slider{
+                width: 20000%;
+                height: 200px;
+                
+                margin: auto;
+                list-style: none;
+                padding-left: 0px;
+                animation-name: a1;
+                animation-timing-function: ease-in-out;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+
+
+            }
+            .sliderbox:hover .slider{
+                animation-play-state: paused;
+            }
+            .slider>li{
+                float: left;
+                width: 1000px;
+                height: 100%;
+                
+               
+            }
+            .sliderbox{
+                border: 1px dashed greenyellow;
+                width: 1000px;
+                height: 200px;
+                margin: auto;
+                overflow: hidden;
+            }
+            @keyframes a1{
+                0%{
+                    transform: translateX(0px);
+                }
+                19%{
+                    transform: translateX(0px);
+                }
+                20%{
+                    transform: translateX(-1000px);
+                }
+                39%{
+                    transform: translateX(-1000px);
+                }
+                40%{
+                    transform: translateX(-2000px);
+                }
+                59%{
+                    transform: translateX(-2000px);
+                }
+                60%{
+                    transform: translateX(-3000px);
+                }
+                79%{
+                    transform: translateX(-3000px);
+                }
+                80%{
+                    transform: translateX(-4000px);
+                }
+                99%{
+                    transform: translateX(-4000px);
+                }
+                100%{
+                    transform: translateX(-5000px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sliderbox">
+            <ul class="slider">
+                <li>
+                    <a href="#">
+                        <img src="./img/th.jfif" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">B</a>
+                </li
+                <li>
+                    <a href="#">C</a>
+                </li>
+                <li>
+                    <a href="#">D</a>
+                </li>
+                <li>
+                    <a href="#">E</a>
+                </li>
+            </ul>
+        </div>
+
+        
+    </body>
+</html>
